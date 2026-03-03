@@ -1,112 +1,111 @@
+/* Global */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+    color: #f1f1f1;
 }
 
-header {
-    background-color: #111;
-    color: white;
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #141414, #1f1f1f);
     text-align: center;
-    padding: 40px 20px;
+    padding: 100px 20px;
 }
 
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00adb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #00949b;
+}
+
+/* Navigation */
 nav {
-    background-color: #333;
+    background-color: #181818;
     text-align: center;
     padding: 15px;
 }
 
 nav a {
-    color: white;
+    color: #f1f1f1;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 nav a:hover {
     color: #00adb5;
 }
 
+/* Sections */
 section {
-    padding: 40px;
-    max-width: 800px;
+    padding: 60px 20px;
+    max-width: 900px;
     margin: auto;
 }
 
 h2 {
     border-bottom: 2px solid #00adb5;
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
+/* Cards */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #1a1a1a;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
 footer {
-    background-color: #111;
-    color: white;
+    background-color: #141414;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
-}
-.hero {
-    background: linear-gradient(to right, #111, #222);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+    color: #777;
 }
 
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #ccc;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 25px;
-    background-color: #00adb5;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #008b92;
-}
+/* Profile Image */
 .profile-pic {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
+    border: 3px solid #00adb5;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
 
+/* Responsive */
+@media (max-width: 768px) {
     .hero h1 {
         font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    nav {
-        padding: 10px;
     }
 
     nav a {
         display: block;
         margin: 10px 0;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    .profile-pic {
-        width: 120px;
     }
 }
