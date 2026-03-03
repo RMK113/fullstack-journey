@@ -82,3 +82,31 @@ footer {
     border-radius: 50%;
     margin-bottom: 20px;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+    }
+}
